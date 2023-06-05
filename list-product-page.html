@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/list-product-page.css">
+     <!--BIBLIOTECAS---------------------------------------------------------------->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+     <!--font awesome-->
+     <!----------------------------------------------------------------------------->
+ 
+</head>
+<body>
+    <header>
+        <img src="assets/img/pagina principal/icon.png" id="icon" onclick="principal()"><!--logo do site-->
+        <div class="header-group">
+            <div class="header-text">
+                <p class="slogan-header">
+                    Frete <span class="span-slogan">gratis</span> em todo Brasil
+                </p><!--slogan header-->
+
+                <li>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li><!--lupa icon-->
+                <li>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                </li><!--coração icon-->
+                <li>
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                </li><!--bolsa icon-->
+                <li>
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </li><!--barras icon-->
+
+                <button>
+                    <a href="login-page.html" class="login">LOGIN</a>
+                </button><!--botão login-->
+            </div><!--header text-->
+        </div><!--header group-->
+    </header><!--header-->
+    <section>
+
+        <div class="title">
+            <p>Sneakers</p>
+        </div>
+
+        <div class="shoes">
+         <div class="shoe" onclick="product()">
+            <img src="assets/img/airjordan1.jpg" alt="">
+            <span id="name">Air Jordan 1</span>
+            <span>price: R$ 1699,99</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/airflight.jpg" alt="">
+            <span id="name">air Flight</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/airjordan37.jpg" alt="">
+            <span id="name">Air Jordan 37</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/lebronnxxt.jpg" alt="">
+            <span id="name"> Lebron NXXT </span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/luka1.jpg" alt="">
+            <span id="name">Air Luka 1</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/airforce1.jpg" alt="">
+            <span id="name">Air Force 1</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/dunkhigh.jpg" alt="">
+            <span id="name">Dunk high</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/airjordan37low.jpg" alt="">
+            <span id="name">Air Jordan 37</span>
+        </div>
+        </div>
+    </section>
+    <footer>
+    </footer>
+
+    <script>
+        function principal(){
+            window.location.href = "pagina principal.html";
+        }
+
+        function product(){
+            window.location.href = "product-page.html";
+        }
+    </script>
+</body>
+</html>
