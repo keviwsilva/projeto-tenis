@@ -12,54 +12,27 @@
     font-family: 'Monument Extended', sans-serif;
 }
 
-/* HEADER */
-header {
-    position: static;
+#navbar{
+    overflow:hidden;
     background-color: #78F306;
-    padding: 25px;
+    z-index: 100;
+    box-shadow: 0px 4px 10px #6969697e;
+    width: 1fr;
     display: flex;
-    justify-content: end;
-    max-width: 100%;
-    align-items: center;
-    text-align: center;
-    padding-top: 1rem;
-    z-index: 10;
-}
-
-/* LOGO DO SITE */
-#icon {
-    position: absolute;
-    width: 15%;
-    margin-right: 80%;
-    display: flex;
-}
-#icon:hover{
-    cursor: pointer;
-}
-
-/* AGRUPAR OS ELEMENTOS DO HEADER E AJUSTAR */
-.header-group {
-    margin-left: 25%;
-}
-
-/* TEXTOS DO HEADER */
-.header-text {
-    display: flex;
-    gap: 3rem;
+    justify-self: end;
+    height: max-content;
     font-weight: 30px;
     font-size: 25px;
-    margin-top: 10px;
-}
+    gap: 3rem;
+  }
 
-/* CFG TEXTOS */
-li {
-    color: black;
-    margin-top: 1.5px;
+  #logo{
+    position: relative;
+    width: 15%;
+    margin-right: auto;
+  }
 
-}
-
-/* CFG BOTÕES */
-button {
+  #navbar button{
     background-color: #fff;
     color: black;
     border-radius: 15px;
@@ -67,55 +40,109 @@ button {
     width: 125px;
     font-size: 25px;
     transition: 0.3s all;
-}
-
-/* CFG LINKS DOS TEXTOS */
-li a {
-    color: black;
-    transition: 0.3s all;
-}
-
-/* CFG LINK DOS BOTÕES */
-button a {
-    color: black;
-}
-
-/* HOVER DOS BOTÕES */
-button:hover {
+    margin: 5px;
+  }
+  
+  #navbar button:hover {
     background-color: black;
     border: black;
-}
-
-/* HOVER DO LOGIN */
-.login:hover {
     color: #fff;
 }
 
-/* HOVER DOS TEXTOS */
-li:hover {
-    color: #fff;
-}
-
-/* HOVER DOS LINKS DOS TEXTOS */
-li a:hover {
-    color: #fff;
-}
-
-/* FONT PARAGRAFO */
-p {
-    font-family: 'Poppins', sans-serif;
-}
-
-/* SLOGAN */
-.slogan-header {
+  
+  #navbar a {
+    float: left;
     display: block;
-}
+    color: #181818;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+    align-self: center;
+  }
 
-/* SPAN SLOGAN */
-.span-slogan {
-    font-family: 'Poppins', sans-serif;
+  #navbar a:hover {
     color: #fff;
 }
+
+  #navbar a:not(:first-child) {
+    float: right;
+  }
+ 
+
+
+  p {
+    align-self: center;
+    font-family: 'Poppins', sans-serif;
+}
+  
+  .span-slogan{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+
+  #navbar .icon {
+    display: none;
+  }
+  
+  #navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  
+  @media screen and (max-width: 900px) {
+   
+     
+  #logo{
+    position: relative;
+    width: 35%;
+    margin-right: auto;
+  }
+    #navbar a{
+      display: none;
+    }
+    #navbar p{
+        display: none;
+    }
+    #navbar button{
+        display: none;
+    }
+  
+    #navbar a.icon {
+      float: right;
+      display: block;
+    }
+  
+    #navbar.responsive {
+      position: relative;
+      flex-direction: column;
+    }
+  
+    #navbar.responsive a:not(:last-child) {
+      float: none;
+      display: block;
+      text-align: center;
+      
+    }
+    #navbar.responsive button {
+        float: none;
+        display: block;
+        align-self:center;
+      }
+  }
 
 
 .title{
@@ -180,8 +207,38 @@ section .shoes .shoe img{
     height: 300px;
 }
 
+hr{
+    width: 90%;
+    margin: 10px;
+    align-self: center;
+    border: 1px solid #bbbaba;
+}
+
+
+
 footer{
     margin-top: 150px;
     background-color: #78F306;
     height: 300px;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    
+section .shoes .shoe img{
+    margin-left: 20px;
+    width: 130px;
+    height: 130px;
+}
+
+
+section .shoes .shoe{
+    width: 150px;
+    height: 300px;
+    font-size: 15px;
+  
+}
+
 }

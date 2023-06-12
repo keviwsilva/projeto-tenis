@@ -15,33 +15,25 @@
 </head>
 
 <body>
-    <header>
-        <img src="assets/img/pagina principal/icon.png" id="icon" onclick="principal()"><!--logo do site-->
-        <div class="header-group">
-            <div class="header-text">
-                <p class="slogan-header">
-                    Frete <span class="span-slogan">gratis</span> em todo Brasil
-                </p><!--slogan header-->
+    
+<header id="navbar" class="navbar">
+    <img src="assets/img/pagina principal/icon.png" alt="" id="logo">
 
-                <li>
-                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                </li><!--lupa icon-->
-                <li>
-                    <a href="#"><i class="fa-solid fa-heart"></i></a>
-                </li><!--coração icon-->
-                <li>
-                    <a href="list-product-page.html"><i class="fa-solid fa-bag-shopping"></i></a>
-                </li><!--bolsa icon-->
-                <li>
-                    <a href="#"><i class="fa-solid fa-bars"></i></a>
-                </li><!--barras icon-->
+    <p class="slogan-header">
+      Frete <span class="span-slogan">gratis</span> em todo Brasil
+    </p><!--slogan header-->
 
-                <button>
-                    <a href="login-page.html" class="login">LOGIN</a>
-                </button><!--botão login-->
-            </div><!--header text-->
-        </div><!--header group-->
-    </header><!--header-->
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+ 
+      <a href="#"><i class="fa-solid fa-heart"></i></a>
+ 
+      <a href="list-product-page.html"><i class="fa-solid fa-bag-shopping"></i></a>
+ 
+      <a class="icon" onclick="toggleFunction()"><i class="fa-solid fa-bars"></i></a>
+ 
+      <button onclick="location.href='login-page.html'" class="login">LOGIN
+      </button><!--botão login-->
+  </header>
     <section>
         <div class="showinfo">
             <div class="main-photos">
@@ -79,6 +71,16 @@
         </div>
         <div class="more-info"></div>
     </section>
+    <script>
+         function toggleFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
 </body>
 
 </html>
