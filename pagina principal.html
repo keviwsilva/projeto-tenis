@@ -10,6 +10,10 @@
     <!--BIBLIOTECAS---------------------------------------------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <!--font awesome-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--aot (CSS)-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!--aot (JS)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script><!--rellax (parallax)-->
+
     <!----------------------------------------------------------------------------->
 
 
@@ -27,7 +31,7 @@
               Frete <span class="span-slogan">gratis</span> em todo Brasil
             </p><!--slogan header-->
         
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href="list-product-page.html"><i class="fa-solid fa-magnifying-glass"></i></a>
          
               <a href="#"><i class="fa-solid fa-heart"></i></a>
          
@@ -55,35 +59,69 @@
             <h3>REEBOK</h3>
         </div>
         <span class="main-text2">aztrek</span>
-        <p class="desc-sneaker">O tênis Reebok Aztrek é uma escolha perfeita para quem busca estilo, conforto e desempenho em um único
+        <p class="desc-sneaker">O tênis Reebok Aztrek é uma escolha perfeita para quem busca estilo, conforto e
+            desempenho em um único
             calçado. Com um design moderno e inspirado no estilo esportivo, o Aztrek combina perfeitamente com qualquer
             look, desde um visual casual até um estilo mais esportivo.</p><!--descrição sneaker-->
+        <button class="reebok-button">CONFERIR</button>
+
     </div><!--main image-->
     </div><!--main background-->
 
     <div class="second-background">
-        <div class="caixa">
-            <div class="card">
-                <div class="numbers-card">
-                    <span class="number">01</span>
-                </div>
-                <img class="air-force-1" src="assets/img/pagina principal/air force 1.png">
-                <p>NIKE AIR FORCE 1</p>
+        <div class="sneakers2">
+            <img src="assets/img/pagina principal/sneakers2.png" data-rellax-speed="4" id="sneakers2">
+            <div class="sneakers2-text">
+                <span class="sneakers2-span">CHUTEIRA</span>
+                <span class="sneakers2-span2">CHUTEIRA</span>
+                <span class="sneakers2-span3">CHUTEIRA</span>
+                <h1 class="sneakers2-h1">VELOCITY</h1>
+                <p class="sneakers2-h2">Chuteira de alta performance com design moderno e conforto excepcional. Ideal
+                    para atletas que buscam máximo desempenho e precisão nos movimentos. Aproveite o melhor do seu jogo
+                    com essa chuteira de excelência</p>
+                    <button class="reebok-button1">CONFERIR</button>
             </div>
+            <div class="wave">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="" fill-opacity="1"
+                        d="M0,288L0,64L96,64L96,96L192,96L192,192L288,192L288,64L384,64L384,288L480,288L480,64L576,64L576,64L672,64L672,128L768,128L768,32L864,32L864,256L960,256L960,224L1056,224L1056,96L1152,96L1152,192L1248,192L1248,64L1344,64L1344,160L1440,160L1440,320L1344,320L1344,320L1248,320L1248,320L1152,320L1152,320L1056,320L1056,320L960,320L960,320L864,320L864,320L768,320L768,320L672,320L672,320L576,320L576,320L480,320L480,320L384,320L384,320L288,320L288,320L192,320L192,320L96,320L96,320L0,320L0,320Z">
+                    </path>
+                </svg>
             </div>
-            
         </div>
-    </div>
-    <script>
-        function toggleFunction() {
-           var x = document.getElementById("navbar");
-           if (x.className === "navbar") {
-               x.className += " responsive";
-           } else {
-               x.className = "navbar";
-           }
-       }
-   </script>
+        <img src="assets/img/pagina principal/shoes-black.jpeg" id="shoes-black">
+        <div class="cupom-text">
+            <h1>USE O CUPOM <this class="style10">"Style10"</this>
+                <this class="desconto">PARA GANHAR 10% DE DESCONTO</this>
+            </h1>
+        </div>
+
+
+
+
+
+
+
+
+        <script>
+            AOS.init();
+
+            var rellax = new Rellax('#sneakers2', {
+                center: true
+
+            });
+
+            rellax.refresh();
+
+         function toggleFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+        </script>
 </body>
 
 </html>

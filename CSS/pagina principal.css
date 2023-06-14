@@ -13,6 +13,11 @@
     font-family: 'Monument Extended', sans-serif;
 }
 
+body {
+    padding-top: 98px;
+    overflow-x: hidden;
+}
+
 /* BACKGROUND PRINCIPAL */
 .main-background {
     background-color: #181818;
@@ -22,7 +27,22 @@
     height: 100vh;
 }
 
-#navbar{
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #78F306;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+
+/* #navbar{
     overflow:hidden;
     background-color: #78F306;
     z-index: 100;
@@ -34,7 +54,7 @@
     font-weight: 30px;
     font-size: 25px;
     gap: 3rem;
-  }
+  } */
 
   #logo{
     position: relative;
@@ -114,7 +134,9 @@
 
   
   @media screen and (max-width: 900px) {
-   
+    header {
+        top: 0;
+    }
      
   #logo{
     position: relative;
@@ -137,7 +159,7 @@
     }
   
     #navbar.responsive {
-      position: relative;
+      position: absolute;
       flex-direction: column;
     }
   
@@ -155,6 +177,8 @@
   }
 
 
+
+
 .sneakers {
     width: 100%;
 }
@@ -168,7 +192,7 @@
 
 .main-text2 {
     position: absolute;
-    top: 77%;
+    top: 79%;
     font-size: 75px;
     color: transparent;
     -webkit-text-stroke: 2px #fff;
@@ -185,24 +209,26 @@
     font-size: 50px;
 }
 
-.news2, .news3, .news4 {
+.news2,
+.news3,
+.news4 {
     color: transparent;
     -webkit-text-stroke: 2px #78F306;
-    margin-top: -2%;  
-    z-index: 1; 
+    margin-top: -2%;
+    z-index: 1;
 }
 
 .news2 {
     opacity: 30%;
-}    
+}
 
 .news3 {
     opacity: 20%;
-}    
+}
 
 .news4 {
     opacity: 10%;
-}    
+}
 
 .desc-sneaker {
     color: #fff;
@@ -212,8 +238,22 @@
     font-size: 18px;
 }
 
+.reebok-button {
+    width: 350px;
+    height: 50px;
+    margin-left: 3%;
+    margin-top: 2%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.reebok-button:hover {
+    color: #fff;
+    background-color: black;
+}
+
 .second-background {
-    background-color: #181818;
+    background-color: #e3e3e3;
     padding: 25%;
 }
 
@@ -255,13 +295,141 @@
     margin-right: 80%;
 }
 
-@media (min-width: 1920px){
+#sneakers2 {
+    position: relative;
+    width: 125%;
+    right: 55%;
+    top: -100px;
+}
+
+.sneakers2-span {
+    position: absolute;
+    font-size: 50px;
+    top: 160%;
+    left: 55%;
+    font-size: 80px;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+}
+
+.sneakers2-span2 {
+    position: absolute;
+    font-size: 50px;
+    top: 150%;
+    left: 55%;
+    font-size: 80px;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    opacity: 20%;
+}
+
+.sneakers2-span3 {
+    position: absolute;
+    font-size: 50px;
+    top: 140%;
+    left: 55%;
+    font-size: 80px;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    opacity: 10%;
+}
+
+.sneakers2-h1 {
+    position: absolute;
+    top: 175%;
+    left: 57%;
+    background: linear-gradient(to bottom, #78F306, #181818);
+    -webkit-background-clip: text;
+    /* Safari, Chrome, Opera */
+    -moz-background-clip: text;
+    /* Firefox */
+    background-clip: text;
+    color: transparent;
+    font-size: 75px;
+}
+
+.sneakers2-h2 {
+    position: absolute;
+    top: 190%;
+    left: 58%;
+    color: black;
+    font-size: 18px;
+    width: 35%;
+}
+
+.reebok-button1 {
+    position: relative;
+    top: -120px;
+    left: 630px;
+    width: 350px;
+    height: 50px;
+    margin-right: 3%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.reebok-button1:hover {
+    color: #fff;
+    background-color: black;
+}
+
+
+
+#shoes-black {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+}
+
+.shoes-black-h1 {
+    color: #78F306;
+    font-size: 200px;
+    top: 50%;
+}
+
+.cupom-text h1 {
+    position: absolute;
+    font-size: 80px;
+    left: 2%;
+    width: 35%;
+    text-align: center;
+    color: #fff;
+}
+
+.desconto {
+    color: #fff;
+    font-size: 70px;
+}
+
+.style10 {
+    color: #78F306;
+    font-size: 80px;
+}
+
+.wave {
+    position: relative;
+    width: 200%;
+    left: -50%;
+    margin-bottom: -5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1920px) {
     .main-text2 {
         top: 56%;
     }
 }
 
-@media (max-width: 1366px){
+@media (max-width: 1366px) {
     .news4 {
         display: none;
     }
