@@ -25,14 +25,12 @@ h1 {
 h2 {
   text-align: center;
 }
-
-p {
+ p {
   font-size: 19px;
   font-weight: 100;
   line-height: 20px;
   letter-spacing: 0.5px;
   margin: 20px 0 30px;
-  
   font-family: 'Poppins', sans-serif;
 }
 
@@ -51,8 +49,8 @@ a {
 
 button {
   border-radius: 20px;
-  border: 1px solid #78F306;
-  background-color: #78F306;
+  border: 1px solid #bb0f0f;
+  background-color: #bb0f0f;
   color: #FFFFFF;
   font-size: 19px;
   font-weight: bold;
@@ -98,8 +96,8 @@ input {
 .container {
   background-color: #fff;
   border-radius: 10px;
-    box-shadow: 0 14px 28px #325f08, 
-          0 10px 10px  #315f06;
+    box-shadow: 0 14px 28px #720707, 
+          0 10px 10px  #720707;
   position: relative;
   overflow: hidden;
   width: 1068px;
@@ -174,9 +172,9 @@ input {
 }
 
 .overlay {
-  background: #78F306;
-  background: -webkit-linear-gradient(to right, #417e08, #78F306);
-  background: linear-gradient(to right,#417e08, #78F306);
+  background: #bb0f0f;
+  background: -webkit-linear-gradient(to right, #720707, #bb0f0f);
+  background: linear-gradient(to right,#720707, #bb0f0f);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;

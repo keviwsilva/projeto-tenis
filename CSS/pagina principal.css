@@ -33,7 +33,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #78F306;
+    background-color: #bb0f0f;
     padding: 25px;
     display: flex;
     justify-content: flex-end;
@@ -191,8 +191,7 @@ header {
 }
 
 .main-text2 {
-    position: absolute;
-    top: 79%;
+    position:relative;
     font-size: 75px;
     color: transparent;
     -webkit-text-stroke: 2px #fff;
@@ -203,7 +202,7 @@ header {
 .news-text {
     margin-left: 2%;
     position: absolute;
-    top: 15%;
+    top: 10%;
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
@@ -419,10 +418,6 @@ header {
 
 
 
-
-
-
-
 @media (min-width: 1920px) {
     .main-text2 {
         top: 56%;
@@ -433,4 +428,66 @@ header {
     .news4 {
         display: none;
     }
+    .news-text{
+        font-size: 30px;
+    }
+    .main-text2{
+        top: 42%;
+    }
+    
+.sneakers2-span {
+    position: absolute;
+    font-size: 50px;
+    top: 130%;
+    left: 55%;
+    font-size: 80px;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+}
+
+.sneakers2-span2 {
+    position: absolute;
+    font-size: 50px;
+    top: 120%;
+    left: 55%;
+    font-size: 80px;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    opacity: 20%;
+}
+
+.sneakers2-span3 {
+    position: absolute;
+    font-size: 50px;
+    top: 110%;
+    left: 55%;
+    font-size: 80px;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    opacity: 10%;
+}
+
+.sneakers2-h1 {
+    position: absolute;
+    top: 140%;
+    left: 57%;
+    background: linear-gradient(to bottom, #78F306, #181818);
+    -webkit-background-clip: text;
+    /* Safari, Chrome, Opera */
+    -moz-background-clip: text;
+    /* Firefox */
+    background-clip: text;
+    color: transparent;
+    font-size: 75px;
+}
+
+.sneakers2-h2 {
+    position: absolute;
+    top: 148%;
+    left: 58%;
+    color: black;
+    font-size: 18px;
+    width: 35%;
+}
+
 }

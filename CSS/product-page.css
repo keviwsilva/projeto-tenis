@@ -15,7 +15,7 @@
 
 #navbar{
     overflow:hidden;
-    background-color: #78F306;
+    background-color: #bb0f0f;
     z-index: 100;
     box-shadow: 0px 4px 10px #6969697e;
     width: 1fr;
@@ -184,7 +184,7 @@ section .info-aside{
     height: 85vh;
     /* border-radius: 5px; */
     width: 37%;
-    background-color: #7dfa09;
+    background-color: #bb0f0f;
     box-shadow: 0px 5px 10px #a8a7a7;
 }
 
