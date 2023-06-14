@@ -162,7 +162,7 @@ header {
 .news3,
 .news4 {
     color: transparent;
-    -webkit-text-stroke: 2px #bb0f0f;
+    -webkit-text-stroke: 2px #fff;
     margin-top: -2%;
     z-index: 1;
 }
